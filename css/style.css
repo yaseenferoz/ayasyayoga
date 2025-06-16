@@ -267,14 +267,24 @@ a:focus {
 /*******************************/
 /********** Hero CSS ***********/
 /*******************************/
-.hero {
+/* .hero {
     position: relative;
     width: 100%;
     margin-bottom: 45px;
     padding: 90px 0;
     background: #FF7722;
     overflow: hidden;
-}
+} */
+
+.hero {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 150px 0 90px;
+    text-align: center;
+    color: #fff;
+    background: url('/img/bg.jpg') center center / cover no-repeat;
+  }
+
 
 .hero .container-fluid {
     padding: 0;
@@ -400,13 +410,22 @@ a:focus {
 /*******************************/
 /******* Page Header CSS *******/
 /*******************************/
-.page-header {
+/* .page-header {
     position: relative;
     margin-bottom: 45px;
     padding: 150px 0 90px 0;
     text-align: center;
     background: #FF7722;
-}
+} */
+
+.page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 150px 0 90px;
+    text-align: center;
+    color: #fff;
+    background: url('/img/bg.jpg') center center / cover no-repeat;
+  }
 
 .page-header h2 {
     position: relative;
@@ -653,9 +672,15 @@ a:focus {
 .service .service-item p {
     margin: 0;
     font-size: 16px;
+    height: 150px;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
 }
 
-
+.service .service-item p::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
 
 /*******************************/
 /********** Class CSS **********/
