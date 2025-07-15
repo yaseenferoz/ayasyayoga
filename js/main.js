@@ -124,3 +124,21 @@
     
 })(jQuery);
 
+const container = document.getElementById('portfolio');
+
+for (let i = 1; i <= 47; i++) {
+  const delay = 0.1 + (i - 1) * 0.2;
+  const div = document.createElement('div');
+  div.className = 'col-lg-4 col-md-6 col-sm-12 portfolio-item wow fadeInUp';
+  div.setAttribute('data-wow-delay', `${delay}s`);
+
+  div.innerHTML = `
+    <div class="portfolio-wrap">
+      <a href="img/gallery/${i}.jpeg" data-lightbox="portfolio">
+        <img src="img/gallery/${i}.jpeg" alt="Portfolio Image">
+      </a>
+    </div>
+  `;
+
+  container.appendChild(div);
+}
