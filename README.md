@@ -1,1 +1,1 @@
-# ayasyayoga website
+# ayasyayoga
